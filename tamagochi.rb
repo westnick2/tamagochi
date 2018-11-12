@@ -1,4 +1,4 @@
-class Tamagotchi
+class Tamagochi
   attr_reader :health, :hungry, :energiness, :cleanliness
 
   STEP = 10

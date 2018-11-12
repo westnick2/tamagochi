@@ -2,12 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <title>Tamagotchi</title>
+  <title>Tamagochi game</title>
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body style="background-image: url(https://wallpaper-house.com/data/out/4/wallpaper2you_33271.jpg)">
 <div>
-  <% if tamagotchi.dead? %>
+  <% if tamagochi.dead? %>
     <div style="padding-left: 500px">
       <h1 style="font-size: 100px; font-family: Brush Script MT, Brush Script Std, cursive; ;color:black ">
         Pet is dead
@@ -19,25 +19,25 @@
       <div style="float: left; padding-right: 50px">
         <img style="float: left" src="https://img.icons8.com/cotton/150/000000/like.png">
         <div style="font-size: 100px; font-family: Brush Script MT, Brush Script Std, cursive;  color:limegreen ">
-          <%= tamagotchi.health %> %
+          <%= tamagochi.health %> %
         </div>
       </div>
       <div style="float: left; padding-right: 50px">
         <a href="../feed"><img src="https://img.icons8.com/cotton/150/000000/hamburger.png"></a>
         <div style="font-size: 100px; font-family: Brush Script MT, Brush Script Std, cursive; color:limegreen ">
-          <%= tamagotchi.hungry %> %
+          <%= tamagochi.hungry %> %
         </div>
       </div>
       <div style="float: left; padding-right: 50px">
         <a href="../sleep"><img src="https://img.icons8.com/linen/150/000000/electricity.png"></a>
         <div style="font-size: 100px; font-family: Brush Script MT, Brush Script Std, cursive; ;color:limegreen ">
-          <%= tamagotchi.energiness %> %
+          <%= tamagochi.energiness %> %
         </div>
       </div>
       <div>
         <a href="../clean"><img src="https://img.icons8.com/cotton/150/000000/wash-your-hands.png"></a>
         <div style="font-size: 100px; font-family: Brush Script MT, Brush Script Std, cursive; color:limegreen ">
-          <%= tamagotchi.cleanliness %> %
+          <%= tamagochi.cleanliness %> %
         </div>
       </div>
     </div>

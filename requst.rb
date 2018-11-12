@@ -1,12 +1,12 @@
-load 'tamagotchi.rb'
+load 'tamagochi.rb'
 require 'erb'
 
 class Requst
-  attr_accessor :method, :path, :tamagotchi
+  attr_accessor :method, :path, :tamagochi
   def call(env)
     self.method = env['REQUEST_METHOD'].downcase
     self.path = env['REQUEST_PATH']
-    self.tamagotchi ||= Tamagotchi.new
+    self.tamagochi ||= Tamagochi.new
 
     public_send(processed_methods_name)
 
@@ -21,22 +21,22 @@ class Requst
 
   def get_
     @a.gsub(/_$*/, '/')
-    tamagotchi
+    tamagochi
   end
 
   def get_feed
     @a.gsub(/_$*/, '/')
-    tamagotchi.feed
+    tamagochi.feed
   end
 
   def get_clean
     @a.gsub(/_$*/, '/')
-    tamagotchi.clean
+    tamagochi.clean
   end
 
   def get_sleep
     @a.gsub(/_$*/, '/')
-    tamagotchi.sleep
+    tamagochi.sleep
   end
 
   def render(template)
